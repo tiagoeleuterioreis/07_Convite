@@ -1,0 +1,29 @@
+input, textArea, select {
+  appearance: none;
+  width: 100%;
+  min-height: 3.125rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  outline: 1px solid var(--input-stroke);
+
+  background-color: var(--input-base);
+  padding: .75rem 1rem;
+  color: var(--txt-body);
+}
+
+label {
+  font: var(--body-sm);
+  color: var(--txt-body);
+
+  display: block; /*pra poder aceitar margin*/
+  margin-bottom: .75rem;
+}
+
+input:focus,
+textArea:focus,
+select:focus,
+input[type="datetime-local"]:focus-within {
+  outline: .0675rem solid var(--brand-light);
+  border-color: var(--input-stroke);
+  outline-offset: .5px;
+}

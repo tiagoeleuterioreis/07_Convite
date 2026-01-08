@@ -43,37 +43,45 @@
               placeholder="Nome do evento">
             </div>
 
-            <div class="input-wrapper">
-              <label for="dateStart">Início</label>
-              <input type="datetime-local" id="dateStart" type="dateStart" name="dateStart" lang="pt-BR">
+            <div class="input-wrapper grid-columns">
+              <div class="input-inner">
+                <label for="dateStart">Início</label>
+                <input type="datetime-local" id="dateStart" type="dateStart" name="dateStart" lang="pt-BR">
+              </div>
 
-              <label for="dateEnd">Fim</label>
-              <input type="datetime-local" id="dateEnd" type="dateEnd" name="dateEnd" lang="pt-BR">
-            </div>
-
-            <div class="input-wrapper">
-              <label>Tipo</label>
-              <div class="radio-wrapper">
-                <div class="radio-inner">
-                  <div class="radio-image">
-                    <label for="meet-type">Presencial</label>
-                    <input type="radio" name="meet-type">
-                  </div>
-                </div>
-
-                <div class="radio-inner">
-                  <div class="radio-image">
-                    <label for="meet-type">Online</label>
-                    <input type="radio" name="meet-type">
-                  </div>
-                </div>
+              <div class="input-inner">
+                <label for="dateEnd">Fim</label>
+                <input type="datetime-local" id="dateEnd" type="dateEnd" name="dateEnd" lang="pt-BR">
               </div>
             </div>
 
-            <div class="input-wrapper">
-              <label for="place-link">Local</label>
-              <input type="url" name="place-link" id="place-link" placeholder="Link ou endereço">
+            <div class="radio-wrapper">
+              <div class="radio-inner">
+                <label>Tipo</label>
+                <div class="radio-container">
+                  <div class="radio-select">
+                    <input type="radio" name="meet-type" value="online" id="online">
+                    <div class="radio-content">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.333 1.834a.833.833 0 0 0-.833.833v11.5h7v-11.5a.833.833 0 0 0-.833-.833zM12.5 5.5V2.667A1.833 1.833 0 0 0 10.667.833H5.333A1.833 1.833 0 0 0 3.5 2.667V7.5h-.833A1.833 1.833 0 0 0 .833 9.334v4a1.834 1.834 0 0 0 1.834 1.833h10.666a1.833 1.833 0 0 0 1.834-1.833v-6A1.833 1.833 0 0 0 13.333 5.5zm0 1v7.667h.833a.834.834 0 0 0 .834-.833v-6a.833.833 0 0 0-.834-.834zm-9 2h-.833a.833.833 0 0 0-.834.834v4a.833.833 0 0 0 .834.833H3.5zM6.167 4a.5.5 0 0 1 .5-.5h2.666a.5.5 0 0 1 0 1H6.667a.5.5 0 0 1-.5-.5m0 2.667a.5.5 0 0 1 .5-.5h2.666a.5.5 0 0 1 0 1H6.667a.5.5 0 0 1-.5-.5m0 2.667a.5.5 0 0 1 .5-.5h2.666a.5.5 0 1 1 0 1H6.667a.5.5 0 0 1-.5-.5m0 2.666a.5.5 0 0 1 .5-.5h2.666a.5.5 0 1 1 0 1H6.667a.5.5 0 0 1-.5-.5" fill="currentColor"/></svg>
+                      <label for="meet-type">Presencial</label>
+                    </div>
+                  </div>
+                  <div class="radio-select">
+                    <input type="radio" name="meet-type" value="presencial" id="presencial">
+                    <div class="radio-content">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.667 4.5a.833.833 0 0 0-.834.833v5.334c0 .46.373.833.834.833h6.666c.46 0 .834-.373.834-.833V5.333a.833.833 0 0 0-.834-.833zm8.5 1.63v-.797A1.834 1.834 0 0 0 9.333 3.5H2.667C1.654 3.5.833 4.32.833 5.333v5.334c0 1.012.821 1.833 1.834 1.833h6.666c1.013 0 1.834-.82 1.834-1.833V9.6l2.705 1.803a.833.833 0 0 0 1.295-.693V5.247a.833.833 0 0 0-1.254-.72zm0 1.157V8.4l3 2V5.537z" fill="currentColor"/></svg>
+                      <label for="meet-type">Online</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="place-link">Local</label>
+                <input type="url" name="place-link" id="place-link" placeholder="Link ou endereço">
+              </div>
             </div>
+
 
             <div class="txtArea-wrapper">
               <label for="description">Descrição</label>
@@ -85,6 +93,11 @@
 
           </fieldset>
 
+          <fieldset></fieldset>
+
+          <fieldset></fieldset>
+
+          <fieldset></fieldset>
         </form>
 
       </div>

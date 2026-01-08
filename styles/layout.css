@@ -11,13 +11,14 @@
 main {
   /* border: 1px solid white; */
   overflow: auto;
-  margin: 1.25rem auto 0 0;
+  margin: 1.25rem auto 1.25rem 0;
   padding: 8.125rem;
+  padding-top: 5rem;
   border-radius: .75rem;
   background-color: var(--shape-body);
 
   & > .main-container {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     min-width: 35rem;
     margin-right: auto;
 
@@ -26,6 +27,20 @@ main {
       color: var(--txt-heading);
     }
   }
+}
+
+/* Para navegadores WebKit (Chrome, Safari, Edge) */
+main::-webkit-scrollbar {
+  width: .25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: var(--shape-background);
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: var(--txt-body);
+  border-radius: .75rem;
 }
 
 aside {

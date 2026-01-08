@@ -65,3 +65,16 @@ body {
   font: var(--body-md);
   color: var(--txt-body);
 }
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--shape-body);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--txt-body);
+  border-radius: 10px;
+}

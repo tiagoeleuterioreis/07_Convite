@@ -6,13 +6,13 @@ form {
 
 fieldset {
   border: none;
-
   display: grid;
   gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 legend {
-  margin-bottom: .75rem;
+  margin-bottom: 1.5rem;
 }
 
 .grid-columns {

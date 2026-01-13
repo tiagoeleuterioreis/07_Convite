@@ -1,0 +1,55 @@
+.color-picker {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .color-option {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    & input {
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer
+    }
+
+    .circle {
+      outline: .5rem solid var(--shape-button);
+      width: 1.75rem;
+      height: 1.75rem;
+      background-color: var(--cyan);
+      border-radius: 50%;
+      transition: all 0.2s ease;
+      display: block;
+    }
+
+    &:has(input:hover) .circle {
+      outline: .5rem solid var(--shape-hover);
+    }
+    &:has(input:checked) .circle {
+      outline: .125rem solid var(--brand-light);
+      outline-offset: .375rem;
+    }
+
+    &:has(#blue) .circle { background-color: var(--brand-light); }
+    &:has(#navy) .circle { background-color: var(--brand-mid); }
+    &:has(#purple) .circle { background-color: var(--purple); }
+    &:has(#fuschia) .circle { background-color: var(--fuschia); }
+    &:has(#pink) .circle { background-color: var(--pink); }
+    &:has(#red) .circle { background-color: var(--danger); }
+    &:has(#orange) .circle { background-color: var(--orange); }
+    &:has(#yellow) .circle { background-color: var(--yellow); }
+    &:has(#lime) .circle { background-color: var(--lime); }
+    &:has(#green) .circle { background-color: var(--green); }
+    &:has(#cyan) .circle { background-color: var(--cyan); }
+
+  }
+}

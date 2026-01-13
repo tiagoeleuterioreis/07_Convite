@@ -31,8 +31,11 @@
 
         <form action="" method="post" enctype="multipart/form-data">
           <fieldset class="about-info">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.25a.75.75 0 0 1 .75.75v1.25h6.5V2a.75.75 0 0 1 1.5 0v1.25H19A2.75 2.75 0 0 1 21.75 6v14A2.75 2.75 0 0 1 19 22.75H5A2.75 2.75 0 0 1 2.25 20V6A2.75 2.75 0 0 1 5 3.25h2.25V2A.75.75 0 0 1 8 1.25m-.75 3.5H5c-.69 0-1.25.56-1.25 1.25v3.25h16.5V6c0-.69-.56-1.25-1.25-1.25h-2.25V6a.75.75 0 0 1-1.5 0V4.75h-6.5V6a.75.75 0 0 1-1.5 0zm13 6H3.75V20c0 .69.56 1.25 1.25 1.25h14c.69 0 1.25-.56 1.25-1.25z" fill="#869198"/></svg>
-            <legend>Sobre o evento</legend>
+            
+            <legend>
+              <img src="assets/icons/calendar.svg" alt="">
+              <span class="txt-h2">Sobre o evento</span>
+            </legend>
 
             <div class="input-wrapper">
               <label for="title">Título</label>
@@ -60,7 +63,7 @@
                 <label>Tipo</label>
                 <div class="radio-container">
                   <div class="radio-select">
-                    <input type="radio" name="meet-type" value="online" id="online">
+                    <input type="radio" name="meet-type" value="online" id="online" checked>
                     <div class="radio-content">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.333 1.834a.833.833 0 0 0-.833.833v11.5h7v-11.5a.833.833 0 0 0-.833-.833zM12.5 5.5V2.667A1.833 1.833 0 0 0 10.667.833H5.333A1.833 1.833 0 0 0 3.5 2.667V7.5h-.833A1.833 1.833 0 0 0 .833 9.334v4a1.834 1.834 0 0 0 1.834 1.833h10.666a1.833 1.833 0 0 0 1.834-1.833v-6A1.833 1.833 0 0 0 13.333 5.5zm0 1v7.667h.833a.834.834 0 0 0 .834-.833v-6a.833.833 0 0 0-.834-.834zm-9 2h-.833a.833.833 0 0 0-.834.834v4a.833.833 0 0 0 .834.833H3.5zM6.167 4a.5.5 0 0 1 .5-.5h2.666a.5.5 0 0 1 0 1H6.667a.5.5 0 0 1-.5-.5m0 2.667a.5.5 0 0 1 .5-.5h2.666a.5.5 0 0 1 0 1H6.667a.5.5 0 0 1-.5-.5m0 2.667a.5.5 0 0 1 .5-.5h2.666a.5.5 0 1 1 0 1H6.667a.5.5 0 0 1-.5-.5m0 2.666a.5.5 0 0 1 .5-.5h2.666a.5.5 0 1 1 0 1H6.667a.5.5 0 0 1-.5-.5" fill="currentColor"/></svg>
                       <label for="meet-type">Presencial</label>
@@ -90,13 +93,190 @@
               placeholder="Escreva sobre os detalhes do evento"
               ></textarea>
             </div>
-
           </fieldset>
 
-          <fieldset></fieldset>
+          <fieldset>
+            <legend>
+              <img src="assets/icons/paintbrush-vertical.svg" alt="">
+              <span class="txt-h2">Personalização</span>
+            </legend>
 
-          <fieldset></fieldset>
+            <div class="color-selection">
+              <label>Cor principal</label>
 
+              <div class="color-picker">
+                <div class="color-option">
+                  <input class="color-selection" type="radio" name="main-color" id="blue" checked>
+                  <span class="circle"></span>
+                </div>
+                
+                <div class="color-option">
+                  <input class="color-selection" type="radio" name="main-color" id="navy">
+                  <span class="circle"></span>
+                </div>
+                
+                <div class="color-option">
+                  <input class="color-selection" type="radio" name="main-color" id="purple">
+                  <span class="circle"></span>
+                </div>
+                
+                <div class="color-option">
+                  <input class="color-selection" type="radio" name="main-color" id="fuschia">
+                  <span class="circle"></span>
+                </div>
+                
+                <div class="color-option">
+                  <input class="color-selection" type="radio" name="main-color" id="pink">
+                  <span class="circle"></span>
+                </div>
+                
+                <div class="color-option">
+                  <input class="color-selection" type="radio" name="main-color" id="red">
+                  <span class="circle"></span>
+                </div>
+                
+                <div class="color-option">
+                  <input class="color-selection" type="radio" name="main-color" id="orange">
+                  <span class="circle"></span>
+                </div>
+                
+                <div class="color-option">
+                  <input class="color-selection" type="radio" name="main-color" id="yellow">
+                  <span class="circle"></span>
+                </div>
+                
+                <div class="color-option">
+                  <input class="color-selection" type="radio" name="main-color" id="lime">
+                  <span class="circle"></span>
+                </div>
+                
+                <div class="color-option">
+                  <input class="color-selection" type="radio" name="main-color" id="green">
+                  <span class="circle"></span>
+                </div>
+                
+                <div class="color-option">
+                  <input class="color-selection" type="radio" name="main-color" id="cyan">
+                  <span class="circle"></span>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="theme-selection">
+              <label>Tema do evento</label>
+
+              <div class="theme-grid">
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="aniversario" checked>
+                  <div class="card-content">
+                    <img src="assets/imgs/Image_4.png" alt="imagem de um bolo com vela de aniversário">
+                    <p>Aniverário</p>
+                  </div>
+                </div>
+                  
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="kids">
+                  <div class="card-content">
+                    <img src="assets/imgs/Image_2.png" alt="mesa com bolo e enfeites de festa infantil">
+                    <p>Infantil</p>
+                  </div>
+                </div>
+                  
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="graduate">
+                  <div class="card-content">
+                    <img src="assets/imgs/Image_5.png" alt="imagem de um chapéu de formatura">
+                    <p>Formatura</p>
+                  </div>
+                </div>
+                  
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="wedding">
+                  <div class="card-content">
+                    <img src="assets/imgs/Image_3.png" alt="imagem de alianças de casamento">
+                    <p>Casamento</p>
+                  </div>
+                </div>
+                  
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="baby-reveal">
+                  <div class="card-content">
+                    <img src="assets/imgs/Image.png" alt="imagem de toalhas umedecidas">
+                    <p>Chá de bebê</p>
+                  </div>
+                </div>
+                  
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="wedding-shower">
+                  <div class="card-content">
+                    <img src="assets/imgs/Image_6.png" alt="imagem de um conjunto de panelas">
+                    <p>Chá de panela</p>
+                  </div>
+                </div>
+                  
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="carnival">
+                  <div class="card-content">
+                    <img src="assets/imgs/Image_7.png" alt="imagem de confetes de carnaval">
+                    <p>Carnaval</p>
+                  </div>
+                </div>
+                  
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="easter">
+                  <div class="card-content">
+                    <img src="assets/imgs/Image_8.png" alt="imagem de ovos de páscoa coloridos">
+                    <p>Páscoa</p>
+                  </div>
+                </div>
+                  
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="june-fest">
+                  <div class="card-content">
+                    <img src="assets/imgs/Image_1.png" alt="imagem de bandeiras de são joão penduradas">
+                    <p>São João</p>
+                  </div>
+                </div>
+                  
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="halloween">
+                  <div class="card-content">
+                    <img src="assets/imgs/Image_9.png" alt="imagem de aboboras de halloween">
+                    <p>Halloween</p>
+                  </div>
+                </div>
+                  
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="christmas">
+                  <div class="card-content">
+                    <img src="assets/imgs/Image_10.png" alt="imagem de presentes de natal">
+                    <p>Natal</p>
+                  </div>
+                </div>
+                  
+                <div class="theme-card">
+                  <input type="radio" name="event-theme" value="other">
+                  <div class="card-content">
+                    <img src="assets/imgs/Image_11.png" alt="imagem de pessoas brindando">
+                    <p>Outro</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </fieldset>
+2
+          <fieldset>
+            <legend>
+              <img src="assets/icons/contact.svg" alt="">
+              <span class="txt-h2">Dados para contato</span>
+            </legend>
+
+
+          </fieldset>
+3
           <fieldset></fieldset>
         </form>
 

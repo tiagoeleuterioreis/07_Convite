@@ -61,6 +61,11 @@ body {
   color: var(--pink);
 }
 
+.txt-h2 {
+  font: var(--heading-sm);
+  color: var(--txt-heading);
+}
+
 .txt-light {
   font: var(--body-md);
   color: var(--txt-body);

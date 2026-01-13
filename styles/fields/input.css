@@ -15,8 +15,8 @@ label {
   font: var(--body-sm);
   color: var(--txt-body);
 
-  display: block; /*pra poder aceitar margin*/
-  margin-bottom: .75rem;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 input:focus,

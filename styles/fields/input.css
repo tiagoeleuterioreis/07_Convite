@@ -39,9 +39,9 @@ input[type="file"] {
     display: none;
   }
 
-  /* &:not(:focus):valid ~ .error {
+  &:not(:focus):valid ~ .error {
     display: none;
-  } */
+  }
 
   &:invalid ~ .error {
     visibility: visible;

@@ -51,7 +51,7 @@ aside {
 
   
   & .aside-container {
-    background: url("/assets/imgs/Background.png") center/cover no-repeat;
+    background: url("../assets/imgs/Background.png") center/cover no-repeat;
     /* border: 1px solid green; */
     border-radius: 0.75rem;
     width: 25rem;

@@ -19,8 +19,8 @@ main {
 
   & > .main-container {
     /* border: 1px solid orange; */
-    min-width: 35rem;
-    margin-right: auto;
+    width: 35rem;
+    margin: auto;
 
     & > h1 {
       font: var(--heading-md);

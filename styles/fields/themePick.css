@@ -17,7 +17,6 @@
       }
     }
 
-    
     .card-content {
       background-color: var(--shape-button);
       display: flex;
@@ -50,6 +49,5 @@
       outline: 2px solid var(--brand-light);
     }
   }
-
 }
 

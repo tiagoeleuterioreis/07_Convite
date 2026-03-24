@@ -266,6 +266,42 @@
                 
               </div>
             </div>
+
+            <div class="input-wrapper custom-layout">
+              <div class="toggle-inner">
+                <label>Estilo</label>
+                <div class="toggle-group">
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="chkbox">
+                    <span class="slider"></span>
+                  </label>
+                  
+                  <span class="status-text"></span>
+                </div>
+              </div>
+              
+              <div class="dropArea-wrapper">
+                <div class="inner-wrapper">
+                  <label for="cover-img">Foto de capa</label>
+                  <div class="dropzone">
+                    <input type="file" name="cover-img" id="cover-img" required>
+                    <label for="cover-img" class="btn-upload">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l3.333 3.334a.5.5 0 0 1-.707.707L8.5 3.207V10a.5.5 0 0 1-1 0V3.207l-2.48 2.48a.5.5 0 0 1-.707-.707zM2 9.5a.5.5 0 0 1 .5.5v2.667a.833.833 0 0 0 .833.833h9.334a.833.833 0 0 0 .833-.833V10a.5.5 0 0 1 1 0v2.667a1.833 1.833 0 0 1-1.833 1.833H3.333A1.833 1.833 0 0 1 1.5 12.667V10a.5.5 0 0 1 .5-.5" fill="currentColor"/></svg>
+                      Selecionar
+                    </label>
+                  
+                    <span id="file-name" valid>
+                      Nenhum arquivo selecionado.
+                    </span>
+                    <div class="error">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.833a6.167 6.167 0 1 0 0 12.334A6.167 6.167 0 0 0 8 1.833M.833 8a7.167 7.167 0 1 1 14.334 0A7.167 7.167 0 0 1 .833 8M8 4.833a.5.5 0 0 1 .5.5V8a.5.5 0 0 1-1 0V5.333a.5.5 0 0 1 .5-.5m-.5 5.834a.5.5 0 0 1 .5-.5h.007a.5.5 0 1 1 0 1H8a.5.5 0 0 1-.5-.5" fill="currentColor"/></svg>
+                      <span>Arquivo inválido.</span>
+                  </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
           </fieldset>
 2
           <fieldset>

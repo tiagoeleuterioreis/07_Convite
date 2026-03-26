@@ -303,13 +303,46 @@
               </div>
             </div>
           </fieldset>
-2
+
           <fieldset>
             <legend>
               <img src="assets/icons/contact.svg" alt="">
               <span class="txt-h2">Dados para contato</span>
             </legend>
 
+            <div class="input-wrapper name-error">
+              <label for="fullname">Nome</label>
+              <input 
+              name="fullname"
+              id="fullname"
+              type="text"
+              placeholder="Nome completo"
+              required>
+              <div class="error">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.833a6.167 6.167 0 1 0 0 12.334A6.167 6.167 0 0 0 8 1.833M.833 8a7.167 7.167 0 1 1 14.334 0A7.167 7.167 0 0 1 .833 8M8 4.833a.5.5 0 0 1 .5.5V8a.5.5 0 0 1-1 0V5.333a.5.5 0 0 1 .5-.5m-.5 5.834a.5.5 0 0 1 .5-.5h.007a.5.5 0 1 1 0 1H8a.5.5 0 0 1-.5-.5" fill="currentColor"/></svg>
+                <span>Campo obrigatório</span>
+              </div>
+            </div>
+
+            <div class="grid-columns">
+              <div class="input-wrapper">
+                <label for="mail">E-mail</label>
+                <input 
+                type="email"
+                name="email"
+                id="mail"
+                placeholder="exemplo@mail.com">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone">Telefone</label>
+                <input 
+                type="text" 
+                name="phone" 
+                id="phone" 
+                placeholder="(10) 9 8765-4321">
+              </div>
+            </div>
 
           </fieldset>
 3

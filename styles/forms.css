@@ -12,11 +12,21 @@ fieldset {
 }
 
 legend {
+  display: flex;
+  align-items: center;
   margin-bottom: 1.5rem;
+
+  img {
+    padding-right: 0.75rem;
+  }
 }
 
 .grid-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
   gap: 1rem;
+}
+
+.name-error {
+  height: 7rem;
 }

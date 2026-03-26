@@ -5,7 +5,7 @@ input, textArea, select {
   border: 1px solid var(--input-stroke);
   border-radius: .5rem;
   outline: 1px solid var(--input-stroke);
-
+  /* border: 1px solid var(--pink); */
   background-color: var(--input-base);
   padding: .75rem 1rem;
   color: var(--txt-body);
@@ -31,21 +31,27 @@ input[type="file"] {
   position: absolute;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  
-  &[required] ~ .error {
-    gap: 0.5rem;
-    color: var(--danger);
-    font: var(--body-Xsm);
-    display: none;
-  }
+}
 
-  &:not(:focus):valid ~ .error {
-    display: none;
-  }
+.input-wrapper {
+  & input[type="file"],
+  #fullname {
+    &[required] ~ .error {
+      gap: 0.5rem;
+      color: var(--danger);
+      font: var(--body-Xsm);
+      display: none;
+    }
 
-  &:invalid ~ .error {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
+    &:not(:focus):valid ~ .error {
+      display: none;
+    }
+
+    &:invalid ~ .error {
+      margin-top: 0.5rem;
+      visibility: visible;
+      opacity: 1;
+      display: flex;
+    }
   }
 }
